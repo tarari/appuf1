@@ -2,16 +2,23 @@
     //
     function getRoute()
     {
-        switch ($_SERVER['REQUEST_URI'] ?? '/'){
-            case '/login': 
+        if(isset($_REQUEST['url'])){
+             $url=$_REQUEST['url'];
+        }else{
+            $url="home";
+        }
+       
+    
+        switch ($url){
+            case 'login': 
                 return 'login';
-            case '/register': 
+            case 'register': 
                 return 'register';
-            case '/regaction': 
+            case 'regaction': 
                 return "regaction";
-            case '/logaction': 
+            case 'logaction': 
                 return "logaction";
-            case '/logout': 
+            case 'logout': 
                 return "logout";
             default: 
                 return 'home';

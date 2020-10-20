@@ -5,7 +5,7 @@
 
     <main>
     <h1>Login</h1>
-    <form class="form" method="POST" action="/logaction">
+    <form class="form" method="POST" action="?url=logaction">
         <p>Sign in please...</p>
         <div class="form-row">
         <input type="text" name="email" placeholder="email" value="<?php 

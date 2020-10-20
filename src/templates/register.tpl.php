@@ -6,7 +6,7 @@
 
     <main>
     <h1>Register</h1>
-    <form class="form" method="POST" action="/regaction">
+    <form class="form" method="POST" action="?ulr=regaction">
         <p>Sign up please...</p>
         <div class="form-row">
         <input type="text" name="uname" placeholder="uname">

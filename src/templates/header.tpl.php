@@ -12,14 +12,14 @@
     <nav class="nav">
         <ul><li><?php 
                 if (isset($_SESSION['uname'])){
-                   echo '<a href="/logout">Logout</a></li>';
+                   echo '<a href="?url=logout">Logout</a></li>';
                 }
                 else{
-                    echo '<a href="login">Login</a></li>';
+                    echo '<a href="?url=login">Login</a></li>';
                 }
         ?>
             
-        <li><a href="register">Register</a></li>
+        <li><a href="?url=register">Register</a></li>
         </ul>
     </nav>
     <hr>
