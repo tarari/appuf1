@@ -21,7 +21,7 @@
             }catch(PDOException $e){
                 die($e->getMessage());
             }
-            header('Location:/');
+            header('Location:?url=home');
             
 
         }

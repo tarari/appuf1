@@ -35,17 +35,17 @@
                             setcookie('email', $user['email'], $hour);
                             setcookie('active', 1, $hour);          
                         }
-                        header('Location:/?url=home');
+                        header('Location:?url=home');
                     }
                 }
                 else{
-                    header('Location:/?url=login');
+                    header('Location:?url=login');
                 }
             }catch(PDOException $e){
                 die($e->getMessage());
             }
         }
         else{
-            header('Location:/?url=login');
+            header('Location:?url=login');
         }
 ?>

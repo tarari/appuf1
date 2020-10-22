@@ -1,6 +1,6 @@
 <?php
-    //
-    function getRoute()
+    
+    function getRoute():string
     {
         if(isset($_REQUEST['url'])){
              $url=$_REQUEST['url'];
